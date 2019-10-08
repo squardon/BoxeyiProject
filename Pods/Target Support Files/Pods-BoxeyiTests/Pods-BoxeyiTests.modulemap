@@ -1,0 +1,6 @@
+framework module Pods_BoxeyiTests {
+  umbrella header "Pods-BoxeyiTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="bD6-Lr-KrE">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Notifications-->
+        <scene sceneID="dDx-bW-Boz">
+            <objects>
+                <viewController storyboardIdentifier="NotificationVC" id="MR7-RE-iA1" customClass="NotificationVC" customModule="Boxeyi" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Dx5-Qk-jjx">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="756"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="qHF-O7-pVw">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="756"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="qHF-O7-pVw" firstAttribute="leading" secondItem="lK4-3M-kCO" secondAttribute="leading" id="AQt-Of-lmv"/>
+                            <constraint firstItem="qHF-O7-pVw" firstAttribute="top" secondItem="lK4-3M-kCO" secondAttribute="top" id="Q50-tb-qeN"/>
+                            <constraint firstAttribute="bottom" secondItem="qHF-O7-pVw" secondAttribute="bottom" id="ZOM-sU-jg0"/>
+                            <constraint firstItem="lK4-3M-kCO" firstAttribute="trailing" secondItem="qHF-O7-pVw" secondAttribute="trailing" id="i5e-Hn-7aN"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="lK4-3M-kCO"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Notifications" id="hBy-FZ-1hw"/>
+                    <connections>
+                        <outlet property="notificationTV" destination="qHF-O7-pVw" id="PBz-wR-bde"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="y7S-Xo-dbO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1105.7971014492755" y="796.875"/>
+        </scene>
+        <!--Notification-->
+        <scene sceneID="d8m-BD-Llq">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="bD6-Lr-KrE" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Notification" image="notification" badgeValue="10" selectedImage="notification" id="RZY-AX-oAI">
+                        <color key="badgeColor" red="1" green="0.099087415710000001" blue="0.0" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBarItem>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" largeTitles="YES" id="6qt-5a-6AM">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="MR7-RE-iA1" kind="relationship" relationship="rootViewController" id="U0O-WZ-e7J"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="N6j-cL-eCd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="195.6521739130435" y="796.875"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="notification" width="18" height="18"/>
+    </resources>
+</document>

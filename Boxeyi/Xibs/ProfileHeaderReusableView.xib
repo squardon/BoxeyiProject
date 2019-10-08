@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="LexendDeca-Regular.ttf">
+            <string>LexendDeca-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ProfileHeaderCell" id="U6b-Vx-4bR" customClass="ProfileHeaderReusableView" customModule="Boxeyi" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jar-ha-lhO">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CME-Bu-YcC">
+                            <rect key="frame" x="10" y="8" width="302" height="34"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="fontDescription" name="LexendDeca-Regular" family="Lexend Deca" pointSize="14"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="CME-Bu-YcC" secondAttribute="trailing" constant="8" id="ZH5-dg-oqZ"/>
+                        <constraint firstItem="CME-Bu-YcC" firstAttribute="leading" secondItem="jar-ha-lhO" secondAttribute="leading" constant="10" id="f9l-or-v6J"/>
+                        <constraint firstItem="CME-Bu-YcC" firstAttribute="top" secondItem="jar-ha-lhO" secondAttribute="top" constant="8" id="jro-oE-z7q"/>
+                        <constraint firstAttribute="bottom" secondItem="CME-Bu-YcC" secondAttribute="bottom" constant="8" id="oYv-A3-SjU"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.14111875830000001" green="0.6276410818" blue="0.060014461390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="jar-ha-lhO" firstAttribute="trailing" secondItem="VXr-Tz-HHm" secondAttribute="trailing" id="2Rp-EA-CAE"/>
+                <constraint firstAttribute="bottom" secondItem="jar-ha-lhO" secondAttribute="bottom" id="jCi-Il-7q1"/>
+                <constraint firstItem="jar-ha-lhO" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" id="kH0-0D-beu"/>
+                <constraint firstItem="jar-ha-lhO" firstAttribute="leading" secondItem="VXr-Tz-HHm" secondAttribute="leading" id="vrX-HD-yCP"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="VXr-Tz-HHm"/>
+            <connections>
+                <outlet property="headerLbl" destination="CME-Bu-YcC" id="rUy-pw-Lzf"/>
+            </connections>
+            <point key="canvasLocation" x="57.971014492753625" y="35.491071428571423"/>
+        </collectionReusableView>
+    </objects>
+</document>
